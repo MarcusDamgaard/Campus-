@@ -1,5 +1,28 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
 }
+  input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
 
+  /* Når brugeren fokuserer på input */
+  input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.8);
+  }
+
+  /* Placeholder styling */
+  input::placeholder {
+    color: #999;
+    font-style: italic;
+  }

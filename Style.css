@@ -1,18 +1,21 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif ;
+    font-weight: 300;
     text-align: center;
     margin-top: 50px;
+    background-color: #FDE4E4;
 }
 input {
     width: 300px;
-    padding: 10px;
+    padding: 22px;
     font-size: 16px;
-    border: 2px solid #ccc;
+    border: 2px solid #0020F3;
     border-radius: 50px; /* Runder kanterne meget */
     outline: none;
     transition: all 0.3s ease-in-out;
+    background-color: #FDE4E4
   }
   /* Når brugeren fokuserer på input */
   input:focus {

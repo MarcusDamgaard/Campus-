@@ -5,16 +5,15 @@ body{
     text-align: center;
     margin-top: 50px;
 }
-  input {
+input {
     width: 300px;
     padding: 10px;
     font-size: 16px;
     border: 2px solid #ccc;
-    border-radius: 8px;
+    border-radius: 50px; /* Runder kanterne meget */
     outline: none;
     transition: all 0.3s ease-in-out;
   }
-
   /* Når brugeren fokuserer på input */
   input:focus {
     border-color: #4caf50;

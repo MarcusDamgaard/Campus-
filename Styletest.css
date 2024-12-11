@@ -1,0 +1,106 @@
+/* Generel styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FDE4E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 375px; /* Figma-designet matcher typisk mobil */
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto; /* Nav, header, main, footer */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('grid-background.png'); /* Baggrund med tern */
+    background-size: cover;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Navigation */
+nav img {
+    height: 40px;
+    margin-top: 10px;
+}
+
+/* Header */
+header img {
+    width: 200px;
+    margin: 10px auto;
+}
+
+/* Main Content */
+main h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input {
+    width: 300px;
+    padding: 22px;
+    font-size: 16px;
+    border: 2px solid #0020F3;
+    border-radius: 50px; /* Runder kanterne meget */
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background-color: #FDE4E4
+  }
+  /* Når brugeren fokuserer på input */
+  input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.8);
+  }
+
+  /* Placeholder styling */
+  input::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #0020F3;
+    border-radius: 25px;
+    background-color: #FDE4E4;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Footer (dots) */
+footer .dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+footer .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+footer .dot.active {
+    background-color: #0020F3;
+}

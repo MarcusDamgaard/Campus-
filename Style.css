@@ -6,6 +6,11 @@ body{
     text-align: center;
     background-color: #FDE4E4;
 }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 input {
     width: 300px;
     padding: 22px;

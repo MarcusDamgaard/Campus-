@@ -12,7 +12,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 375px; /* Figma-designet matcher typisk mobil */
+    max-width: 393px; /* Figma-designet matcher typisk mobil */
     height: 100%;
     display: grid;
     grid-template-rows: auto auto 1fr auto; /* Nav, header, main, footer */
@@ -69,6 +69,7 @@ input {
 }
 
 .input-group label {
+    text-align: left;
     display: block;
     font-size: 14px;
     margin-bottom: 5px;
@@ -77,12 +78,12 @@ input {
 
 .input-group input {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     font-size: 16px;
     border: 2px solid #0020F3;
-    border-radius: 25px;
+    border-radius: 50px;
     background-color: #FDE4E4;
-    text-align: center;
+    text-align: left;
     box-sizing: border-box;
 }
 

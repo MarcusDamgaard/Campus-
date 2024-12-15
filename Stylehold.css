@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif ;
+    font-weight: 300;
+    text-align: center;
+    background-color: #FDE4E4;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+input {
+    width: 300px;
+    padding: 22px;
+    font-size: 16px;
+    border: 2px solid #0020F3;
+    border-radius: 50px; /* Runder kanterne meget */
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background-color: #FDE4E4
+  }
+  /* Når brugeren fokuserer på input */
+  input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.8);
+  }
+
+  /* Placeholder styling */
+  input::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+
+  nav{
+    text-align: left;
+    margin-top: 10px;
+  }
+  nav img{
+    width: 35%;
+    margin-left: 3%;
+    margin-top: 3%;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 38%;
+    margin-top: 10%;
+  }
+
+  main h1 {
+    font-size: 110%;
+    margin-top: 15%;
+  }
+
+  main h2 {
+    text-align: left;
+    font-size: 90%;
+    margin-bottom: 1%;
+margin-left: 12%;   
+  }
+
+.placering{
+  margin-top: 15%;
+}
+
+.place{
+  margin-top: 7%;
+}
+
+footer{
+  margin-top: 75%;
+}
+
+/* Footer (dots) */
+footer .dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  footer .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+  }
+  
+  footer .dot.active {
+    background-color: #0020F3;
+  }

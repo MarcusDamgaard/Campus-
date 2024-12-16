@@ -126,4 +126,7 @@ button{
 span{
   display: flex;
   font-size: 20px;
+  margin-left: 45px;
+  margin-top: 84px;
+  color: black;
 }

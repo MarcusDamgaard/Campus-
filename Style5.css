@@ -31,7 +31,7 @@ body{
     width: 110px;
     border-radius: 50px;
     color: black;
-    border: 4px solid #132D46;
+    border: 4px solid #76DB76;
     text-decoration: none;
     background-color: #FDE4E4;
     padding: 10px;
@@ -51,6 +51,10 @@ body{
     
     border: 3px solid #000000;
     border-radius: 50px;
+    padding: 10px;
+    width: 390px;
+    margin-left: 7px;
+    margin-top: 50px;
   }
   
   .place{
@@ -59,9 +63,103 @@ body{
     main h1 {
       font-size: 20px;
       font-weight: lighter;
+      margin-top: 30px;
     }
 .grønne{
     text-align: left;
     color: #76DB76;
 }
-  
+
+ footer{
+    margin-top: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fut{
+margin-right: 40px;
+  }
+  .fut2{
+    
+  }
+  .fut3{
+    margin-left: 40px;
+    margin-top: 6px;
+  }
+  .fut4{
+    margin-left: 40px;
+    margin-bottom: 1px;
+  }
+
+  .h{
+    margin-left: 65px;
+  }
+
+  .h2{
+    margin-left: 80px;
+  }
+
+  .h3{
+    margin-left: 20px;
+  }
+
+  .img5{
+    padding-left: 57px;
+  }
+
+  .img6{
+    padding-left: 80px;
+  }
+
+  .img7{
+    padding-left: 56px;
+  }
+
+  span{
+    font-size: 20px;
+    position: absolute;
+    color: black;
+  }
+
+  .pil{
+    margin-left: -50px;
+  }
+  a{
+    text-decoration: none;
+  }
+
+  .bot{
+    margin-bottom: -14px;
+  }
+
+  .p{
+    margin-top: 6px;
+    margin-left: 16px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #132D46;
+  }
+
+  h2{
+    font-size: 17px;
+    margin-bottom: 2px;
+    margin-left: 30px;
+    text-align: center;
+    color: #132D46;
+  }
+
+  .img2{
+    margin-left: 15px;
+  }
+
+  .p3{
+    font-size: 12px;
+    margin-left: 60px;
+    margin-top: 18px;
+    color: #00B800;
+  }
+
+  .psss{
+    margin-left: 25px;
+    margin-top: 60px;
+  }

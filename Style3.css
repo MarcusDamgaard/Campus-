@@ -29,9 +29,15 @@ header {
 }
 .grøn{
     border: 3px solid #76DB76;
+    margin-left: 10px;
 }
+
+.sort{
+  margin-right: 10px;
+}
+
 button{
-  width: 110px;
+  width: 120px;
   border-radius: 50px;
   color: black;
   border: 4px solid #132D46;
@@ -45,15 +51,100 @@ button{
   .knap {
     display: flex;
     justify-content: center;
-
+    margin-bottom: 60px;
+    margin-top: 20px;
   }
 
   section{
     display: flex;
-    border: 3px solid #76DB76;
+    border: 1px solid #76DB76;
     border-radius: 50px;
+    padding: 10px;
   }
 
   .place{
     flex-direction: column;
   }
+
+  h2{
+    font-size: 17px;
+    margin-bottom: 2px;
+    margin-left: 30px;
+    text-align: center;
+    color: #132D46;
+  }
+
+  .p{
+    margin-top: 4px;
+    margin-left: 12px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #132D46;
+  }
+
+  .p2{
+    margin-left: 52px;
+    font-size: 12px;
+    margin-bottom: -1px;
+    color: #FF0000
+  }
+
+  .bot{
+    margin-bottom: -14px;
+  }
+
+  .imglineup{
+margin-top: 2px;
+    margin-left: 55px;
+  }
+
+  .img2{
+    margin-left: 40px;
+  }
+
+  .img3{
+    margin-left: 23px;
+  }
+
+  .p3{
+    font-size: 12px;
+    margin-left: 69px;
+    margin-top: 18px;
+    color: #00B800;
+  }
+
+  .sec{
+    margin-top: 30px;
+  }
+
+  .sort2{
+    margin-left: 160px;
+  }
+
+  .knap2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 165px;
+  }
+  footer{
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fut{
+margin-right: 40px;
+  }
+  .fut2{
+    
+  }
+  .fut3{
+    margin-left: 40px;
+    margin-top: 6px;
+  }
+  .fut4{
+    margin-left: 40px;
+    margin-bottom: 1px;
+  }
+

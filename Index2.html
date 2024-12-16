@@ -13,7 +13,7 @@
         </nav>
 
         <header>
-            <a href="Index.html">
+            <a href="Index4.html">
                 <img class="img-fluid" src="Billeder/Group 2119.png" alt="">
             </a>
         </header>
@@ -100,7 +100,13 @@
         </main>
 
         <footer>
-            <span>&#11164;</span>
+            <span id="linkSpan">&#11164;</span>
+
+<script>
+    document.getElementById("linkSpan").addEventListener("click", () => {
+        window.location.href = "Index.html"; // Navigate to the link
+    });
+</script>
         </footer>
     </div>
 </body>

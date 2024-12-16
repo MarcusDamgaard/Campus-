@@ -19,7 +19,14 @@
     <main>
         <video src="Billeder/b642e147-656a-4a06-a7fa-ec780c4fd5e2.mp4" autoplay muted loop></video>
 
-<button>Log ind</button>
+<button id="loginButton">Log ind</button>
+<script>
+    document.getElementById("loginButton").addEventListener("click", () => {
+      alert("Du har klikket på 'Log ind'!");
+      window.location.href = "Index2.html"; // Naviger til login-side
+    });
+  </script>
+
 
 <button>Registrer</button>
 

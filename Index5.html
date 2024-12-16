@@ -35,8 +35,16 @@
   <p class="grønne">Hannah Wagner</p>
   <p class="grønne">Peter andersen</p>
   <p class="grønne">Dorte Lise</p>
-  <button>Tilmeld</button>
+  <button id="loginButton">Tilmeld</button>
+<script>
+    document.getElementById("loginButton").addEventListener("click", () => {
+      alert("Du har klikket på 'Log ind'!");
+      // window.location.href = "login.html"; // Naviger til login-side
+    });
+  </script>
 </section>
+
+
 
 
 

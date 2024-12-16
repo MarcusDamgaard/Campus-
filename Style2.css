@@ -16,6 +16,20 @@ body{
   max-width: 100%;
   height: auto;
 }
+
+.husk{
+  border-radius: 50px;
+  width: 20px;
+}
+
+.inplacering{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 input {
     width: 300px;
     padding: 22px;
@@ -37,6 +51,8 @@ input {
     color: #999;
     font-style: italic;
   }
+
+
 
   nav{
     text-align: left;
@@ -67,9 +83,18 @@ font-weight: lighter;
 }
 
 .place{
-  margin-top: 7%;
+ display: flex;
+
 }
 
+.knapvis{
+  border: 0;
+  
+}
+.knap img{
+  width: 25px;
+  position: absolute;
+}
 button{
   width: 80px;
   border-radius: 50px;

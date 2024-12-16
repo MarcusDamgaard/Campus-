@@ -19,18 +19,94 @@
     <main>
 <h1>Log ind</h1>
 
-<section class="placering">
-<h2>Email</h2>
-  <!-- Input field for name -->
-  <input type="text" id="nameInput" placeholder="Campus Køge">
-<div class="place">
-  <h2>Kodeord</h2>
-  <input type="text" id="nameInput" placeholder="Papergaden">
-  <!-- Area to display the greeting -->
- </div> 
-</section>
+
 <div class="knap">
-<button>Log ind</button>
+    <form id="loginForm">
+      <h2>Email</h2>
+      <input type="email" id="emailInput" placeholder="Campus køge" required>
+      <div class="place">
+        <h2>Kodeord</h2>
+          <!-- Knappen med billede -->
+          <button class="knapvis" type="button" id="togglePassword">
+            <img class="img-fluid" id="toggleImage" src="Billeder/Group 8733.png" alt="Vis kodeord">
+          </button>
+        </div>
+        <div class="inplacering">
+        <input class="log" type="password" id="passwordInput" placeholder="Papergaden" required>
+        
+        <script>
+          document.getElementById("togglePassword").addEventListener("click", () => {
+            const passwordInput = document.getElementById("passwordInput");
+            const toggleButton = document.getElementById("togglePassword");
+            const toggleImage = document.getElementById("toggleImage"); // Billedet
+        
+            // Skift type og billede afhængigt af inputfeltets status
+            if (passwordInput.type === "password") {
+              passwordInput.type = "text"; // Gør kodeord synligt
+              toggleImage.src = "Billeder/Group 8732.png"; // Skift billede til 'åben'
+              toggleImage.alt = "Skjul kodeord"; // Opdater alt-tekst
+            } else {
+              passwordInput.type = "password"; // Skjul kodeord
+              toggleImage.src = "Billeder/Group 8733.png"; // Skift billede til 'lukket'
+              toggleImage.alt = "Vis kodeord"; // Opdater alt-tekst
+            }
+          });
+        </script>
+         <label>
+            <input class="husk" type="checkbox" id="rememberMe"> Husk mig
+          </label>
+        </div>
+
+        
+        </div>
+        
+        <script>
+          // Gem e-mail i localStorage
+          document.getElementById("loginForm").addEventListener("submit", (event) => {
+            const rememberMe = document.getElementById("rememberMe").checked;
+            const email = document.getElementById("emailInput").value;
+        
+            if (rememberMe) {
+              localStorage.setItem("savedEmail", email);
+            } else {
+              localStorage.removeItem("savedEmail");
+            }
+          });
+        
+          // Hent e-mail ved siden start
+          window.addEventListener("load", () => {
+            const savedEmail = localStorage.getItem("savedEmail");
+            if (savedEmail) {
+              document.getElementById("emailInput").value = savedEmail;
+              document.getElementById("rememberMe").checked = true;
+            }
+          });
+        </script>
+      <button type="submit">Log ind</button>
+    </form>
+  </div>
+  
+  <script>
+    // Tilføj event listener til login-formularen
+    document.getElementById("loginForm").addEventListener("submit", (event) => {
+      // Forhindrer standard formular-submission
+      event.preventDefault();
+      
+      // Hent værdier fra inputfelterne
+      const email = document.getElementById("emailInput").value;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+      // Tjek om email-formatet er gyldigt
+      if (!emailRegex.test(email)) {
+        alert("Indtast venligst en gyldig e-mailadresse.");
+      } else {
+        alert("Login lykkedes!");
+  
+        // Naviger til en ny side
+        window.location.href = "Index3.html"; // Skift "dashboard.html" til din ønskede side
+      }
+    });
+  </script>
 
 <button>Registrer</button>
 </div>

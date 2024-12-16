@@ -18,23 +18,24 @@ body{
   }
   nav{
     text-align: left;
+    margin-top: 25px;
+    margin-left: 15px;
   }
   
   header {
-  
     justify-content: center;
     align-items: center;
-   
+    margin-top: 35px;
   }
   button{
-    width: 80px;
+    width: 110px;
     border-radius: 50px;
     color: black;
-    border: 3px solid #76DB76;
+    border: 4px solid #132D46;
     text-decoration: none;
     background-color: #FDE4E4;
-    padding: 14px;
-    font-size: 10px;
+    padding: 10px;
+    font-size: 13px;
    outline: none;
   }
   

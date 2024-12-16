@@ -18,12 +18,15 @@ body{
 }
 nav{
   text-align: left;
+  margin-top: 25px;
+  margin-left: 15px;
 }
 
 header {
-    justify-content: center;
-    align-items: center;
-  }
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
 
   main{
     display: flex;

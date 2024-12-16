@@ -22,59 +22,55 @@ body{
   width: 20px;
 }
 
+.huskplace{
+  align-self: flex-start;
+  margin-left: 35px;
+  margin-top: 3px;
+  font-size: 15px;
+}
+
 .inplacering{
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 input {
-    width: 300px;
-    padding: 22px;
+    width: 365px;
+    padding: 26px;
     font-size: 16px;
-    border: 2px solid #0020F3;
+    border: 2px solid #132D46;
     border-radius: 50px; /* Runder kanterne meget */
     outline: none;
     transition: all 0.3s ease-in-out;
     background-color: #FDE4E4
   }
-  /* Når brugeren fokuserer på input */
-  input:focus {
-    border-color: #4caf50;
-    box-shadow: 0 0 8px rgba(76, 175, 80, 0.8);
-  }
-
-  /* Placeholder styling */
-  input::placeholder {
-    color: #999;
-    font-style: italic;
-  }
-
-
 
   nav{
     text-align: left;
+    margin-top: 25px;
+    margin-left: 15px;
   }
 
   header {
-
     justify-content: center;
     align-items: center;
-   
+    margin-top: 35px;
   }
 
   main h1 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: lighter;
+    margin-top: 35px;
   }
 
   main h2 {
     text-align: left;
-    font-size: 90%;
-    margin-bottom: 1%;
-margin-left: 12%;   
+    font-size: 13px;
+    margin-bottom: 2px;
+margin-left: 40px;   
 font-weight: lighter;
   }
 
@@ -94,20 +90,40 @@ font-weight: lighter;
 .knap img{
   width: 25px;
   position: absolute;
+  margin-top: 39px;
+  margin-left: 220px;
 }
 button{
-  width: 80px;
+  width: 110px;
   border-radius: 50px;
   color: black;
-  border: 3px solid #000000;
+  border: 4px solid #132D46;
   text-decoration: none;
   background-color: #FDE4E4;
-  padding: 14px;
-  font-size: 10px;
+  padding: 10px;
+  font-size: 13px;
  outline: none;
 }
 
 .knap {
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
+}
+
+.display{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.margin{
+  margin-top: 15px;
+}
+
+span{
+  display: flex;
+  font-size: 20px;
 }
